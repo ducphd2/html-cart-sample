@@ -467,10 +467,6 @@ button:hover {
   display: none !important;
 }
 
-/* .content {
-  display: none;
+.mt-5 {
+  margin-top: 5px;
 }
-
-.content:target {
-  display: block;
-} */

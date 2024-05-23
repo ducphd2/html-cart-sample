@@ -1,41 +1,41 @@
 let data = {
-  order_date: "2024-05-21T06:51:30.016Z",
-  biz_id: "65281e26320f04ab76b6a08f",
+  order_date: '2024-05-21T06:51:30.016Z',
+  biz_id: '65281e26320f04ab76b6a08f',
   customer: {
-    id: "6618e23cdf19e5312a99420f",
-    pid: "fb24518838787715449",
-    page_pid: "fb114380591682194",
-    platform: "facebook",
-    name: "Ngọc Đặng Xuân",
-    last_name: "Ngọc Đặng Xuân",
+    id: '6618e23cdf19e5312a99420f',
+    pid: 'fb24518838787715449',
+    page_pid: 'fb114380591682194',
+    platform: 'facebook',
+    name: 'Ngọc Đặng Xuân',
+    last_name: 'Ngọc Đặng Xuân',
     picture:
-      "https://platform-lookaside.fbsbx.com/platform/profilepic/?eai=AXF7XkUOfBeB85qilL3u65GEg0VpVJ7nEfm6LUrI1rWIYvnzYh_aOHdTdZO64cguwc6soVpaQLNR&psid=24518838787715449&width=300&ext=1715498813&hash=AbYYBeZqEYR8MUk8kvl07IUQ",
-    phone: "+84961885605",
-    ward: "Hoằng quang",
-    district: "Tp.Thanh hoá",
-    province: "Thanh hoá",
-    address: "Thôn Nguyệt Viên 3, Hoằng quang, Tp.Thanh hoá, Thanh hoá",
-    street: "Thôn Nguyệt Viên 3",
+      'https://platform-lookaside.fbsbx.com/platform/profilepic/?eai=AXF7XkUOfBeB85qilL3u65GEg0VpVJ7nEfm6LUrI1rWIYvnzYh_aOHdTdZO64cguwc6soVpaQLNR&psid=24518838787715449&width=300&ext=1715498813&hash=AbYYBeZqEYR8MUk8kvl07IUQ',
+    phone: '+84961885605',
+    ward: 'Hoằng quang',
+    district: 'Tp.Thanh hoá',
+    province: 'Thanh hoá',
+    address: 'Thôn Nguyệt Viên 3, Hoằng quang, Tp.Thanh hoá, Thanh hoá',
+    street: 'Thôn Nguyệt Viên 3',
   },
-  code: "DH0064",
-  status: "DRAFT",
+  code: 'DH0064',
+  status: 'DRAFT',
   amount: 10000,
   total_product: 1,
-  note: "Giao giờ hành chính nhé",
+  note: 'Giao giờ hành chính nhé',
   carts: [
     {
-      product_id: "664bf9272a25f766eaef5503",
+      product_id: '664bf9272a25f766eaef5503',
       product_category_ids: [],
-      product_category_names: ["mỹ phẩm, làm đẹp"],
-      name: "Bông tẩy trang 3 lớp",
-      desc: "100% bông tự nhiên",
-      picture: "",
+      product_category_names: ['mỹ phẩm, làm đẹp'],
+      name: 'Bông tẩy trang 3 lớp',
+      desc: '100% bông tự nhiên',
+      picture: '',
       quantity: 2,
       price: 10000,
       sale_price: 5000,
     },
   ],
-  currency: "VND",
+  currency: 'VND',
 };
 
 function calculateTotal(cartItems) {
@@ -49,12 +49,12 @@ function createProxy(obj) {
     set(target, property, value) {
       target[property] = value;
       data.amount = calculateTotal(data.carts) + (data.delivery_cost || 0);
-      amount.textContent = data.amount + "đ";
-      amount_pre.textContent = calculateTotal(data.carts) + "đ";
+      amount.textContent = data.amount + 'đ';
+      amount_pre.textContent = calculateTotal(data.carts) + 'đ';
       return true;
     },
     get(target, property) {
-      if (typeof target[property] === "object" && target[property] !== null) {
+      if (typeof target[property] === 'object' && target[property] !== null) {
         return createProxy(target[property]);
       }
       return target[property];
@@ -62,78 +62,24 @@ function createProxy(obj) {
   });
 }
 
-const total_porduct = document.getElementById("total-porduct");
-const amount = document.getElementById("amount");
-const amount_pre = document.getElementById("amount-pre");
-const delivery_cost = document.getElementById("delivery-cost");
+const total_porduct = document.getElementById('total-porduct');
+const amount = document.getElementById('amount');
+const amount_pre = document.getElementById('amount-pre');
+const delivery_cost = document.getElementById('delivery-cost');
 
 let proxiedData = createProxy(data);
-function sendRequest() {
-  const url = "https://api.countrystatecity.in/v1/countries";
-  const apiKey = "QkZVaWNMQlRBVzhWOVJOZ3dsVVhQeGxCYlhJMzRJdFp5QUQzVXQyNg==";
-
-  const headers = new Headers();
-  headers.append("X-CSCAPI-KEY", apiKey);
-
-  return from(
-    fetch(url, { method: "GET", headers: headers, redirect: "follow" }).then(
-      (response) => response.json()
-    )
-  ).pipe(
-    catchError((error) => {
-      console.error("Error:", error);
-      return throwError(error);
-    })
-  );
-}
-
-function getStatesByCountry(countryCode) {
-  const url = `https://api.countrystatecity.in/v1/countries/${countryCode}/states`;
-  const apiKey = "QkZVaWNMQlRBVzhWOVJOZ3dsVVhQeGxCYlhJMzRJdFp5QUQzVXQyNg==";
-
-  const headers = new Headers();
-  headers.append("X-CSCAPI-KEY", apiKey);
-
-  return from(
-    fetch(url, { method: "GET", headers: headers, redirect: "follow" }).then(
-      (response) => response.json()
-    )
-  ).pipe(
-    catchError((error) => {
-      return throwError(error);
-    })
-  );
-}
-
-function getCitiesByState(countryCode, stateCode) {
-  const url = `https://api.countrystatecity.in/v1/countries/${countryCode}/states/${stateCode}/cities`;
-  const apiKey = "QkZVaWNMQlRBVzhWOVJOZ3dsVVhQeGxCYlhJMzRJdFp5QUQzVXQyNg==";
-
-  const headers = new Headers();
-  headers.append("X-CSCAPI-KEY", apiKey);
-
-  return from(
-    fetch(url, { method: "GET", headers: headers, redirect: "follow" }).then(
-      (response) => response.json()
-    )
-  ).pipe(
-    catchError((error) => {
-      return throwError(error);
-    })
-  );
-}
 
 function initData() {
-  amount.textContent = data.amount + "đ";
-  amount_pre.textContent = calculateTotal(data.carts) + "đ";
-  const productList = document.getElementById("product-list");
+  amount.textContent = data.amount + 'đ';
+  amount_pre.textContent = calculateTotal(data.carts) + 'đ';
+  const productList = document.getElementById('product-list');
   if (productList) {
     productList.innerHTML = `
     <div class="d-flex justify-content-between w-100">
       <span class="text-size-2">Sản phảm đặt mua</span>
       <span class="text-size-1 text-red">${data.carts.length} sản phẩm</span>
     </div>
-  `;
+    `;
     data.carts.forEach(function (product, index) {
       productList.innerHTML += `
       <div class="d-flex justify-content-between w-100">
@@ -142,14 +88,14 @@ function initData() {
         <div class="w-100 overflow-hidden d-flex flex-column justify-content-between">
           <div>
             <div class="text-size-1 text-truncate">${product.name}</div>
-            <div class="text-size-9 text-gray text-truncate">Phân loại: ${product.product_category_names.join(
-              ", "
+            <div class="text-size-9 text-gray text-truncate mt-5">Phân loại: ${product.product_category_names.join(
+              ', '
             )}</div>
           </div>
           <div class="d-flex justify-content-between">
             <div>
               <span class="font-weight-600 text-size-1 text-orange">${
-                product.sale_price + "đ"
+                product.sale_price + 'đ'
               }</span>
               <span class="text-gray text-line-through text-size-9">${
                 product.price
@@ -182,7 +128,7 @@ function initData() {
   const carts_quantity = document.querySelectorAll(`.carts-quantity`);
   const adds = document.querySelectorAll(`.add-product`);
   adds.forEach((item, index) => {
-    item.addEventListener("click", function (e) {
+    item.addEventListener('click', function (e) {
       proxiedData.carts[index].quantity += 1;
       carts_quantity[index].value = proxiedData.carts[index].quantity;
     });
@@ -190,7 +136,7 @@ function initData() {
 
   const minues = document.querySelectorAll(`.minus-product`);
   minues.forEach((item, index) => {
-    item.addEventListener("click", function (e) {
+    item.addEventListener('click', function (e) {
       if (proxiedData.carts[index].quantity > 1) {
         proxiedData.carts[index].quantity -= 1;
       }
@@ -199,7 +145,7 @@ function initData() {
   });
 
   carts_quantity.forEach((item, i) => {
-    item.addEventListener("input", function () {
+    item.addEventListener('input', function () {
       if (item.value < 1) {
         item.value = 1;
       }
@@ -207,58 +153,58 @@ function initData() {
     });
   });
 
-  const customer_name = document.getElementById("customer-name");
-  const customer_phone = document.getElementById("customer-phone");
-  const customer_address = document.getElementById("customer-address");
-  const customer_note = document.getElementById("customer-note");
+  const customer_name = document.getElementById('customer-name');
+  const customer_phone = document.getElementById('customer-phone');
+  const customer_address = document.getElementById('customer-address');
+  const customer_note = document.getElementById('customer-note');
   customer_name.value = data.customer.name;
   customer_phone.value = data.customer.phone;
   customer_address.value = data.customer.address;
-  customer_name.addEventListener("input", function () {
+  customer_name.addEventListener('input', function () {
     data.customer.name = customer_name.value;
   });
-  customer_phone.addEventListener("input", function () {
+  customer_phone.addEventListener('input', function () {
     data.customer.phone = customer_phone.value;
   });
-  customer_address.addEventListener("input", function () {
+  customer_address.addEventListener('input', function () {
     data.customer.address = customer_address.value;
   });
-  customer_note.addEventListener("input", function () {
+  customer_note.addEventListener('input', function () {
     data.note = customer_note.value;
   });
 
-  var navLinks = document.querySelectorAll(".tab-nav a");
-  var contentSections = document.querySelectorAll(".tab-content");
+  var navLinks = document.querySelectorAll('.tab-nav a');
+  var contentSections = document.querySelectorAll('.tab-content');
 
   if (navLinks.length && contentSections.length) {
     for (var i = 1; i < contentSections.length; i++) {
-      contentSections[i].style.display = "none";
+      contentSections[i].style.display = 'none';
     }
 
-    navLinks[0].classList.add("active");
+    navLinks[0].classList.add('active');
 
     navLinks.forEach(function (link) {
-      link.addEventListener("click", function (event) {
+      link.addEventListener('click', function (event) {
         event.preventDefault();
 
         navLinks.forEach(function (nav) {
-          nav.classList.remove("active");
+          nav.classList.remove('active');
         });
 
-        link.classList.add("active");
+        link.classList.add('active');
 
         contentSections.forEach(function (section) {
-          section.style.display = "none";
+          section.style.display = 'none';
         });
 
-        var target = document.querySelector(link.getAttribute("href"));
-        target.style.display = "block";
+        var target = document.querySelector(link.getAttribute('href'));
+        target.style.display = 'block';
       });
     });
   }
 
-  const confirm = document.getElementById("confirm");
-  confirm.addEventListener("click", function (e) {
+  const confirm = document.getElementById('confirm');
+  confirm.addEventListener('click', function (e) {
     console.log('data:::', data);
     if (
       !data.customer.name ||
@@ -275,7 +221,7 @@ function initData() {
       }
       return;
     }
-    const pay_body = document.getElementById("pay-body");
+    const pay_body = document.getElementById('pay-body');
 
     const productHTML = data.carts
       .map(
@@ -292,7 +238,7 @@ function initData() {
               <div>
                 <div class="text-size-1">${product.name}</div>
                 <div class="text-size-9 text-gray">
-                  Phân loại: ${product.product_category_names.join(", ")}
+                  Phân loại: ${product.product_category_names.join(', ')}
                 </div>
               </div>
               <div class="d-flex justify-content-between">
@@ -310,7 +256,7 @@ function initData() {
         </div>
 `
       )
-      .join("");
+      .join('');
 
     pay_body.innerHTML = `
     <div class="full-screen px-16 py-12 gap-2">
@@ -324,7 +270,7 @@ function initData() {
             <img src="Img/receipt-2.svg" alt="" />
             <div class="w-100">
               <div class="text-size-2 font-weight-500">Mã đơn hàng</div>
-              <div class="text-size-2 font-weight-500 text-red">${
+              <div class="text-size-2 font-weight-500 text-red mt-5">${
                 data.code
               }</div>
             </div>
@@ -333,7 +279,7 @@ function initData() {
             <img src="Img/box-add.svg" alt="" />
             <div class="w-100">
               <div class="text-size-2 font-weight-500">Trạng thái đơn hàng</div>
-              <div class="text-size-2 font-weight-500 text-green">${
+              <div class="text-size-2 font-weight-500 text-green mt-5">${
                 data.status
               }</div>
             </div>
@@ -383,7 +329,7 @@ function initData() {
           </div>
           <div class="d-flex align-items-center gap-1 boder-input">
             <img src="Img/sms.svg" alt="" />
-            <span>${data.customer.email || "Không có"}</span>
+            <span>${data.customer.email || 'Không có'}</span>
           </div>
         </div>
       </div>
@@ -517,25 +463,25 @@ function initData() {
       </div>
   `;
     hideAllElements();
-    showElementById("pay");
+    showElementById('pay');
     scrollToTop();
-    const minutes = document.getElementById("minutes");
-    const seconds = document.getElementById("seconds");
+    const minutes = document.getElementById('minutes');
+    const seconds = document.getElementById('seconds');
     startCountdown(60 * 5, minutes, seconds);
   });
 
-  const back = document.getElementById("back");
-  back.addEventListener("click", function (e) {
+  const back = document.getElementById('back');
+  back.addEventListener('click', function (e) {
     hideAllElements();
-    showElementById("cart");
+    showElementById('cart');
     scrollToTop();
   });
 
-  const container_fast = document.getElementById("fast-container");
-  const container_normal = document.getElementById("normal-container");
+  const container_fast = document.getElementById('fast-container');
+  const container_normal = document.getElementById('normal-container');
 
-  const pay = document.getElementById("pay");
-  pay.addEventListener("click", function (e) {
+  const pay = document.getElementById('pay');
+  pay.addEventListener('click', function (e) {
     console.log('e::::', e);
     //lay data o day nha
     console.log(data);
@@ -546,40 +492,41 @@ function initData() {
   );
 
   radioButtons[0].checked = true;
-  container_fast.classList.add("selected-radio");
-  container_normal.classList.remove("selected-radio");
+  container_fast.classList.add('selected-radio');
+  container_normal.classList.remove('selected-radio');
+  proxiedData.delivery_cost = 15000;
 
   radioButtons.forEach((radio) => {
-    radio.addEventListener("change", (event) => {
-      if (event.target.id === "fast") {
+    radio.addEventListener('change', (event) => {
+      if (event.target.id === 'fast') {
         proxiedData.delivery_cost = 15000;
-        delivery_cost.textContent = proxiedData.delivery_cost + "đ";
-        container_fast.classList.add("selected-radio");
-        container_normal.classList.remove("selected-radio");
-      } else if (event.target.id === "normal") {
+        delivery_cost.textContent = proxiedData.delivery_cost + 'đ';
+        container_fast.classList.add('selected-radio');
+        container_normal.classList.remove('selected-radio');
+      } else if (event.target.id === 'normal') {
         proxiedData.delivery_cost = 10000;
-        delivery_cost.textContent = proxiedData.delivery_cost + "đ";
-        container_normal.classList.add("selected-radio");
-        container_fast.classList.remove("selected-radio");
+        delivery_cost.textContent = proxiedData.delivery_cost + 'đ';
+        container_normal.classList.add('selected-radio');
+        container_fast.classList.remove('selected-radio');
       }
     });
   });
 }
 
-const listIdMenu = ["cart", "pay"];
+const listIdMenu = ['cart', 'pay'];
 
 function showElementById(id) {
-  var elements = document.querySelectorAll("." + id);
+  var elements = document.querySelectorAll('.' + id);
   elements.forEach((element) => {
-    element.classList.remove("d-none");
+    element.classList.remove('d-none');
   });
 }
 
 function hideAllElements() {
   listIdMenu.forEach(function (id) {
-    var elements = document.querySelectorAll("." + id);
+    var elements = document.querySelectorAll('.' + id);
     elements.forEach((element) => {
-      element.classList.add("d-none");
+      element.classList.add('d-none');
     });
   });
 }
@@ -591,28 +538,28 @@ function scrollToTop() {
   });
 }
 
-var modal = document.getElementById("myModal");
+var modal = document.getElementById('myModal');
 
-var openModalButton = document.getElementById("pay");
+var openModalButton = document.getElementById('pay');
 
 // var closeButton = document.getElementsByClassName("close-button")[0];
-var closeModalButton = document.getElementById("closeModalButton");
+var closeModalButton = document.getElementById('closeModalButton');
 
-openModalButton.addEventListener("click", function () {
-  modal.style.display = "flex";
+openModalButton.addEventListener('click', function () {
+  modal.style.display = 'flex';
 });
 
 // closeButton.addEventListener("click", function () {
 //   modal.style.display = "none";
 // });
 
-closeModalButton.addEventListener("click", function () {
-  modal.style.display = "none";
+closeModalButton.addEventListener('click', function () {
+  modal.style.display = 'none';
 });
 
-window.addEventListener("click", function (event) {
+window.addEventListener('click', function (event) {
   if (event.target == modal) {
-    modal.style.display = "none";
+    modal.style.display = 'none';
   }
 });
 
@@ -624,15 +571,15 @@ function startCountdown(duration, displayMinuit, displaySecon) {
     minutes = parseInt(timer / 60, 10);
     seconds = parseInt(timer % 60, 10);
 
-    minutes = minutes < 10 ? "0" + minutes : minutes;
-    seconds = seconds < 10 ? "0" + seconds : seconds;
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+    seconds = seconds < 10 ? '0' + seconds : seconds;
 
     displayMinuit.textContent = minutes;
     displaySecon.textContent = seconds;
 
     if (--timer < 0) {
       clearInterval(interval);
-      alert("Hết giờ!");
+      alert('Hết giờ!');
     }
   }, 1000);
 }
@@ -641,17 +588,17 @@ function formatDate(isoDate) {
   const date = new Date(isoDate);
 
   // Lấy giờ và phút
-  const hours = date.getHours().toString().padStart(2, "0");
-  const minutes = date.getMinutes().toString().padStart(2, "0");
+  const hours = date.getHours().toString().padStart(2, '0');
+  const minutes = date.getMinutes().toString().padStart(2, '0');
 
   // Lấy ngày, tháng và năm
-  const day = date.getDate().toString().padStart(2, "0");
-  const month = (date.getMonth() + 1).toString().padStart(2, "0"); // Tháng bắt đầu từ 0
+  const day = date.getDate().toString().padStart(2, '0');
+  const month = (date.getMonth() + 1).toString().padStart(2, '0'); // Tháng bắt đầu từ 0
   const year = date.getFullYear();
 
   return `${hours}:${minutes} ${day}/${month}/${year}`;
 }
 hideAllElements();
-showElementById("cart");
+showElementById('cart');
 
 initData();
