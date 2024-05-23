@@ -1,0 +1,261 @@
+@mixin text-italic-1 {
+  font-size: 0.8125rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 0.9375rem;
+}
+
+@mixin text-size-1 {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1rem;
+}
+
+@mixin text-size-1-slight {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1rem;
+}
+
+@mixin text-size-2 {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.125rem;
+}
+
+@mixin text-size-2-slight {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.125rem;
+}
+
+@mixin text-size-4 {
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 500;
+  // line-height: 2.625rem;
+}
+
+@mixin text-size-7 {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2rem;
+}
+
+@mixin text-size-8 {
+  font-size: 0.625rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 0.625rem;
+}
+
+@mixin text-size-9 {
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0.875rem;
+}
+
+@mixin text-size-3 {
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.125rem;
+}
+
+@mixin text-size-5 {
+  font-size: 3.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 4rem;
+}
+
+@mixin text-size-6 {
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 600;
+  // line-height: 4rem;
+}
+
+.text-italic-1 {
+  @include text-italic-1;
+}
+
+.text-size-1 {
+  @include text-size-1;
+}
+
+.text-size-1-slight {
+  @include text-size-1-slight;
+}
+
+.text-size-2 {
+  @include text-size-2;
+}
+
+.text-size-2-slight {
+  @include text-size-2-slight;
+}
+
+.text-size-3 {
+  @include text-size-3;
+}
+
+.text-size-4 {
+  @include text-size-4;
+}
+
+.text-size-5 {
+  @include text-size-5;
+}
+
+.text-size-6 {
+  @include text-size-6;
+}
+
+.text-size-7 {
+  @include text-size-7;
+}
+
+.text-size-8 {
+  @include text-size-8;
+}
+
+.text-size-9 {
+  @include text-size-9;
+}
+
+.btn {
+  color: var(--White);
+  border-radius: var(--radius-m, 8px);
+  background-color: var(--primary);
+  // border: 1px solid var(--secondary-600-base, #00bd56);
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+a.btn {
+  text-decoration: none !important;
+  align-content: center;
+}
+
+.btn-sm {
+  padding: 0 24px;
+  @include text-size-1;
+  height: 40px;
+}
+
+.btn-lg {
+  padding: 0 32px;
+  @include text-size-2;
+  height: 48px;
+}
+
+.btn-full-width {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0 32px;
+  @include text-size-2;
+  height: 48px;
+}
+
+.btn-xl {
+  padding: 0 32px;
+  @include text-size-2;
+  height: 64px !important;
+}
+
+.bg-green {
+  background: var(--secondary-600-base, #00bd56);
+}
+
+.bg-blue {
+  background: var(--primary-600-base);
+}
+
+.bg-gray {
+  background: var(--Black-50) !important;
+}
+
+.bg-white {
+  background: var(--White) !important;
+}
+
+.text-black {
+  color: var(--Neutral-2);
+}
+
+.text-gray {
+  color: var(--Neutral-5) !important;
+}
+
+.text-red {
+  color: var(--Accent-2) !important;
+}
+
+.text-orange {
+  color: var(--Secondary) !important;
+}
+
+.text-green {
+  color: var(--primary) !important;
+}
+
+.text-parimary {
+  color: var(--parimary-04) !important;
+}
+
+.border-top-1 {
+  border-top: 1px solid var(--Black-50, #292929);
+}
+
+.font-weight-700 {
+  font-weight: 700;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.font-weight-500 {
+  font-weight: 500;
+}
+
+.font-weight-400 {
+  font-weight: 400;
+}
+
+.text-line-through {
+  text-decoration-line: line-through;
+}
+
+.img-product {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.text-truncate-line-clamp {
+  @for $i from 1 through 100 {
+    &-v#{$i} {
+      display: -webkit-box;
+      -webkit-line-clamp: #{$i};
+      -webkit-box-orient: vertical;
+      width: inherit;
+      overflow: hidden;
+      line-height: unset !important;
+    }
+  }
+}

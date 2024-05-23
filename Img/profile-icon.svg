@@ -1,0 +1,29 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" fill="#1E1E1E"/>
+<g id="Section 1">
+<path d="M-91 -496C-91 -497.105 -90.1046 -498 -89 -498H2206C2207.1 -498 2208 -497.105 2208 -496V1232C2208 1233.1 2207.1 1234 2206 1234H-89C-90.1046 1234 -91 1233.1 -91 1232V-496Z" fill="#404040"/>
+<path d="M-89 -497H2206V-499H-89V-497ZM2207 -496V1232H2209V-496H2207ZM2206 1233H-89V1235H2206V1233ZM-90 1232V-496H-92V1232H-90ZM-89 1233C-89.5523 1233 -90 1232.55 -90 1232H-92C-92 1233.66 -90.6569 1235 -89 1235V1233ZM2207 1232C2207 1232.55 2206.55 1233 2206 1233V1235C2207.66 1235 2209 1233.66 2209 1232H2207ZM2206 -497C2206.55 -497 2207 -496.552 2207 -496H2209C2209 -497.657 2207.66 -499 2206 -499V-497ZM-89 -499C-90.6568 -499 -92 -497.657 -92 -496H-90C-90 -496.552 -89.5523 -497 -89 -497V-499Z" fill="white" fill-opacity="0.1"/>
+<g id="Gi&#225;&#187;&#143; h&#195;&#160;ng" clip-path="url(#clip0_0_1)">
+<rect width="375" height="1554" transform="translate(-16 -392)" fill="white"/>
+<g id="Form">
+<g id="Frame 1000003072">
+<g id="Frame 1000003002">
+<g id="vuesax/linear/profile">
+<g id="vuesax/linear/profile_2">
+<g id="profile">
+<path id="Vector" d="M12.1596 10.87C12.0596 10.86 11.9396 10.86 11.8296 10.87C9.44957 10.79 7.55957 8.84 7.55957 6.44C7.55957 3.99 9.53957 2 11.9996 2C14.4496 2 16.4396 3.99 16.4396 6.44C16.4296 8.84 14.5396 10.79 12.1596 10.87Z" stroke="#007BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M7.15973 14.56C4.73973 16.18 4.73973 18.82 7.15973 20.43C9.90973 22.27 14.4197 22.27 17.1697 20.43C19.5897 18.81 19.5897 16.17 17.1697 14.56C14.4297 12.73 9.91973 12.73 7.15973 14.56Z" stroke="#007BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="375" height="1554" fill="white" transform="translate(-16 -392)"/>
+</clipPath>
+</defs>
+</svg>

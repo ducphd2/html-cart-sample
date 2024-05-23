@@ -1,0 +1,29 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" fill="#1E1E1E"/>
+<g id="Section 1">
+<path d="M-91 -1062C-91 -1063.1 -90.1046 -1064 -89 -1064H2206C2207.1 -1064 2208 -1063.1 2208 -1062V666C2208 667.105 2207.1 668 2206 668H-89C-90.1046 668 -91 667.105 -91 666V-1062Z" fill="#404040"/>
+<path d="M-89 -1063H2206V-1065H-89V-1063ZM2207 -1062V666H2209V-1062H2207ZM2206 667H-89V669H2206V667ZM-90 666V-1062H-92V666H-90ZM-89 667C-89.5523 667 -90 666.552 -90 666H-92C-92 667.657 -90.6569 669 -89 669V667ZM2207 666C2207 666.552 2206.55 667 2206 667V669C2207.66 669 2209 667.657 2209 666H2207ZM2206 -1063C2206.55 -1063 2207 -1062.55 2207 -1062H2209C2209 -1063.66 2207.66 -1065 2206 -1065V-1063ZM-89 -1065C-90.6568 -1065 -92 -1063.66 -92 -1062H-90C-90 -1062.55 -89.5523 -1063 -89 -1063V-1065Z" fill="white" fill-opacity="0.1"/>
+<g id="Gi&#225;&#187;&#143; h&#195;&#160;ng" clip-path="url(#clip0_0_1)">
+<rect width="375" height="1554" transform="translate(-16 -958)" fill="white"/>
+<g id="Frame 1000004539">
+<g id="Frame 1000004537">
+<g id="vuesax/linear/ticket-discount">
+<g id="vuesax/linear/ticket-discount_2">
+<g id="ticket-discount">
+<path id="Vector" d="M19.5 12.5C19.5 11.12 20.62 10 22 10V9C22 5 21 4 17 4H7C3 4 2 5 2 9V9.5C3.38 9.5 4.5 10.62 4.5 12C4.5 13.38 3.38 14.5 2 14.5V15C2 19 3 20 7 20H17C21 20 22 19 22 15C20.62 15 19.5 13.88 19.5 12.5Z" stroke="#007BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M9 14.75L15 8.75" stroke="#007BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M14.9945 14.75H15.0035" stroke="#007BFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M8.99451 9.25H9.00349" stroke="#007BFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="375" height="1554" fill="white" transform="translate(-16 -958)"/>
+</clipPath>
+</defs>
+</svg>

@@ -1,0 +1,112 @@
+@import "core";
+
+.full-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  // height: 100vh;
+  width: 100%;
+  max-width: 800px;
+  color: var(--Neutral-2);
+  background-color: var(--White);
+  position: relative;
+}
+
+.full-width {
+  background: var(--primary);
+  color: var(--White);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+}
+
+.limit-container {
+  width: 100%;
+  max-width: 800px;
+}
+
+.border-left {
+  border-left: 2px solid #595959;
+}
+
+.border-radius {
+  border-radius: 8px;
+  border: 1px solid var(--Neutral-9, #e9ebed);
+}
+
+.border-shadow {
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.button-header {
+  padding: 4px 8px;
+  border-radius: 12px;
+  background: rgba(59, 59, 59, 0.2);
+}
+
+.boder-input-group {
+  padding: 0 16px;
+  border-radius: 8px;
+  border: 1px solid var(--Neutral-9, #e9ebed);
+}
+
+.boder-input {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--Neutral-9, #e9ebed);
+}
+
+.dashed-border {
+  height: 1px;
+  background: #e9ebed;
+}
+
+.status-order {
+  border-radius: 4px;
+  border: 1px solid var(--primary, #4ead33);
+  width: 160px;
+  padding: 6px;
+  text-align: center;
+  color: var(--primary);
+  font-weight: 500;
+  @include text-size-9;
+}
+
+.button-countdown {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background: #ee5050;
+  color: var(--White);
+}
+
+.selected-radio {
+  color: var(--primary);
+  border-radius: 8px;
+  border: 1px solid var(--parimary-01, #00c092);
+  background: rgba(0, 192, 146, 0.08);
+}
+
+@media (max-width: 825px) {
+}
+
+@media (min-width: 825px) and (max-width: 1266px) {
+}
+
+@media (min-width: 1267px) and (max-width: 1965px) {
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #f6f6f6;
+}

@@ -1,0 +1,1116 @@
+.text-italic-1 {
+  font-size: 0.8125rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 0.9375rem;
+}
+
+.text-size-1 {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1rem;
+}
+
+.text-size-1-slight {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1rem;
+}
+
+.text-size-2 {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.125rem;
+}
+
+.text-size-2-slight {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.125rem;
+}
+
+.text-size-3 {
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.125rem;
+}
+
+.text-size-4 {
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.text-size-5 {
+  font-size: 3.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 4rem;
+}
+
+.text-size-6 {
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.text-size-7 {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2rem;
+}
+
+.text-size-8 {
+  font-size: 0.625rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 0.625rem;
+}
+
+.text-size-9 {
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0.875rem;
+}
+
+.btn {
+  color: var(--White);
+  border-radius: var(--radius-m, 8px);
+  background-color: var(--primary);
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  cursor: pointer;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+
+a.btn {
+  text-decoration: none !important;
+  align-content: center;
+}
+
+.btn-sm {
+  padding: 0 24px;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1rem;
+  height: 40px;
+}
+
+.btn-lg {
+  padding: 0 32px;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.125rem;
+  height: 48px;
+}
+
+.btn-full-width {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0 32px;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.125rem;
+  height: 48px;
+}
+
+.btn-xl {
+  padding: 0 32px;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.125rem;
+  height: 64px !important;
+}
+
+.bg-green {
+  background: var(--secondary-600-base, #00bd56);
+}
+
+.bg-blue {
+  background: var(--primary-600-base);
+}
+
+.bg-gray {
+  background: var(--Black-50) !important;
+}
+
+.bg-white {
+  background: var(--White) !important;
+}
+
+.text-black {
+  color: var(--Neutral-2);
+}
+
+.text-gray {
+  color: var(--Neutral-5) !important;
+}
+
+.text-red {
+  color: var(--Accent-2) !important;
+}
+
+.text-orange {
+  color: var(--Secondary) !important;
+}
+
+.text-green {
+  color: var(--primary) !important;
+}
+
+.text-parimary {
+  color: var(--parimary-04) !important;
+}
+
+.border-top-1 {
+  border-top: 1px solid var(--Black-50, #292929);
+}
+
+.font-weight-700 {
+  font-weight: 700;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.font-weight-500 {
+  font-weight: 500;
+}
+
+.font-weight-400 {
+  font-weight: 400;
+}
+
+.text-line-through {
+  text-decoration-line: line-through;
+}
+
+.img-product {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.text-truncate-line-clamp-v1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v5 {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v6 {
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v7 {
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v8 {
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v9 {
+  display: -webkit-box;
+  -webkit-line-clamp: 9;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v10 {
+  display: -webkit-box;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v11 {
+  display: -webkit-box;
+  -webkit-line-clamp: 11;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v12 {
+  display: -webkit-box;
+  -webkit-line-clamp: 12;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v13 {
+  display: -webkit-box;
+  -webkit-line-clamp: 13;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v14 {
+  display: -webkit-box;
+  -webkit-line-clamp: 14;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v15 {
+  display: -webkit-box;
+  -webkit-line-clamp: 15;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v16 {
+  display: -webkit-box;
+  -webkit-line-clamp: 16;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v17 {
+  display: -webkit-box;
+  -webkit-line-clamp: 17;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v18 {
+  display: -webkit-box;
+  -webkit-line-clamp: 18;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v19 {
+  display: -webkit-box;
+  -webkit-line-clamp: 19;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v20 {
+  display: -webkit-box;
+  -webkit-line-clamp: 20;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v21 {
+  display: -webkit-box;
+  -webkit-line-clamp: 21;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v22 {
+  display: -webkit-box;
+  -webkit-line-clamp: 22;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v23 {
+  display: -webkit-box;
+  -webkit-line-clamp: 23;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v24 {
+  display: -webkit-box;
+  -webkit-line-clamp: 24;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v25 {
+  display: -webkit-box;
+  -webkit-line-clamp: 25;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v26 {
+  display: -webkit-box;
+  -webkit-line-clamp: 26;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v27 {
+  display: -webkit-box;
+  -webkit-line-clamp: 27;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v28 {
+  display: -webkit-box;
+  -webkit-line-clamp: 28;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v29 {
+  display: -webkit-box;
+  -webkit-line-clamp: 29;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v30 {
+  display: -webkit-box;
+  -webkit-line-clamp: 30;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v31 {
+  display: -webkit-box;
+  -webkit-line-clamp: 31;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v32 {
+  display: -webkit-box;
+  -webkit-line-clamp: 32;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v33 {
+  display: -webkit-box;
+  -webkit-line-clamp: 33;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v34 {
+  display: -webkit-box;
+  -webkit-line-clamp: 34;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v35 {
+  display: -webkit-box;
+  -webkit-line-clamp: 35;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v36 {
+  display: -webkit-box;
+  -webkit-line-clamp: 36;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v37 {
+  display: -webkit-box;
+  -webkit-line-clamp: 37;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v38 {
+  display: -webkit-box;
+  -webkit-line-clamp: 38;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v39 {
+  display: -webkit-box;
+  -webkit-line-clamp: 39;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v40 {
+  display: -webkit-box;
+  -webkit-line-clamp: 40;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v41 {
+  display: -webkit-box;
+  -webkit-line-clamp: 41;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v42 {
+  display: -webkit-box;
+  -webkit-line-clamp: 42;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v43 {
+  display: -webkit-box;
+  -webkit-line-clamp: 43;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v44 {
+  display: -webkit-box;
+  -webkit-line-clamp: 44;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v45 {
+  display: -webkit-box;
+  -webkit-line-clamp: 45;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v46 {
+  display: -webkit-box;
+  -webkit-line-clamp: 46;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v47 {
+  display: -webkit-box;
+  -webkit-line-clamp: 47;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v48 {
+  display: -webkit-box;
+  -webkit-line-clamp: 48;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v49 {
+  display: -webkit-box;
+  -webkit-line-clamp: 49;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v50 {
+  display: -webkit-box;
+  -webkit-line-clamp: 50;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v51 {
+  display: -webkit-box;
+  -webkit-line-clamp: 51;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v52 {
+  display: -webkit-box;
+  -webkit-line-clamp: 52;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v53 {
+  display: -webkit-box;
+  -webkit-line-clamp: 53;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v54 {
+  display: -webkit-box;
+  -webkit-line-clamp: 54;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v55 {
+  display: -webkit-box;
+  -webkit-line-clamp: 55;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v56 {
+  display: -webkit-box;
+  -webkit-line-clamp: 56;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v57 {
+  display: -webkit-box;
+  -webkit-line-clamp: 57;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v58 {
+  display: -webkit-box;
+  -webkit-line-clamp: 58;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v59 {
+  display: -webkit-box;
+  -webkit-line-clamp: 59;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v60 {
+  display: -webkit-box;
+  -webkit-line-clamp: 60;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v61 {
+  display: -webkit-box;
+  -webkit-line-clamp: 61;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v62 {
+  display: -webkit-box;
+  -webkit-line-clamp: 62;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v63 {
+  display: -webkit-box;
+  -webkit-line-clamp: 63;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v64 {
+  display: -webkit-box;
+  -webkit-line-clamp: 64;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v65 {
+  display: -webkit-box;
+  -webkit-line-clamp: 65;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v66 {
+  display: -webkit-box;
+  -webkit-line-clamp: 66;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v67 {
+  display: -webkit-box;
+  -webkit-line-clamp: 67;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v68 {
+  display: -webkit-box;
+  -webkit-line-clamp: 68;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v69 {
+  display: -webkit-box;
+  -webkit-line-clamp: 69;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v70 {
+  display: -webkit-box;
+  -webkit-line-clamp: 70;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v71 {
+  display: -webkit-box;
+  -webkit-line-clamp: 71;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v72 {
+  display: -webkit-box;
+  -webkit-line-clamp: 72;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v73 {
+  display: -webkit-box;
+  -webkit-line-clamp: 73;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v74 {
+  display: -webkit-box;
+  -webkit-line-clamp: 74;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v75 {
+  display: -webkit-box;
+  -webkit-line-clamp: 75;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v76 {
+  display: -webkit-box;
+  -webkit-line-clamp: 76;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v77 {
+  display: -webkit-box;
+  -webkit-line-clamp: 77;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v78 {
+  display: -webkit-box;
+  -webkit-line-clamp: 78;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v79 {
+  display: -webkit-box;
+  -webkit-line-clamp: 79;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v80 {
+  display: -webkit-box;
+  -webkit-line-clamp: 80;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v81 {
+  display: -webkit-box;
+  -webkit-line-clamp: 81;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v82 {
+  display: -webkit-box;
+  -webkit-line-clamp: 82;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v83 {
+  display: -webkit-box;
+  -webkit-line-clamp: 83;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v84 {
+  display: -webkit-box;
+  -webkit-line-clamp: 84;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v85 {
+  display: -webkit-box;
+  -webkit-line-clamp: 85;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v86 {
+  display: -webkit-box;
+  -webkit-line-clamp: 86;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v87 {
+  display: -webkit-box;
+  -webkit-line-clamp: 87;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v88 {
+  display: -webkit-box;
+  -webkit-line-clamp: 88;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v89 {
+  display: -webkit-box;
+  -webkit-line-clamp: 89;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v90 {
+  display: -webkit-box;
+  -webkit-line-clamp: 90;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v91 {
+  display: -webkit-box;
+  -webkit-line-clamp: 91;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v92 {
+  display: -webkit-box;
+  -webkit-line-clamp: 92;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v93 {
+  display: -webkit-box;
+  -webkit-line-clamp: 93;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v94 {
+  display: -webkit-box;
+  -webkit-line-clamp: 94;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v95 {
+  display: -webkit-box;
+  -webkit-line-clamp: 95;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v96 {
+  display: -webkit-box;
+  -webkit-line-clamp: 96;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v97 {
+  display: -webkit-box;
+  -webkit-line-clamp: 97;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v98 {
+  display: -webkit-box;
+  -webkit-line-clamp: 98;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v99 {
+  display: -webkit-box;
+  -webkit-line-clamp: 99;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+.text-truncate-line-clamp-v100 {
+  display: -webkit-box;
+  -webkit-line-clamp: 100;
+  -webkit-box-orient: vertical;
+  width: inherit;
+  overflow: hidden;
+  line-height: unset !important;
+}
+
+.full-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  max-width: 800px;
+  color: var(--Neutral-2);
+  background-color: var(--White);
+  position: relative;
+}
+
+.full-width {
+  background: var(--primary);
+  color: var(--White);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+}
+
+.limit-container {
+  width: 100%;
+  max-width: 800px;
+}
+
+.border-left {
+  border-left: 2px solid #595959;
+}
+
+.border-radius {
+  border-radius: 8px;
+  border: 1px solid var(--Neutral-9, #e9ebed);
+}
+
+.border-shadow {
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.button-header {
+  padding: 4px 8px;
+  border-radius: 12px;
+  background: rgba(59, 59, 59, 0.2);
+}
+
+.boder-input-group {
+  padding: 0 16px;
+  border-radius: 8px;
+  border: 1px solid var(--Neutral-9, #e9ebed);
+}
+
+.boder-input {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--Neutral-9, #e9ebed);
+}
+
+.dashed-border {
+  height: 1px;
+  background: #e9ebed;
+}
+
+.status-order {
+  border-radius: 4px;
+  border: 1px solid var(--primary, #4ead33);
+  width: 160px;
+  padding: 6px;
+  text-align: center;
+  color: var(--primary);
+  font-weight: 500;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0.875rem;
+}
+
+.button-countdown {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background: #ee5050;
+  color: var(--White);
+}
+
+.selected-radio {
+  color: var(--primary);
+  border-radius: 8px;
+  border: 1px solid var(--parimary-01, #00c092);
+  background: rgba(0, 192, 146, 0.08);
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #f6f6f6;
+}
+
+/*# sourceMappingURL=index.css.map */

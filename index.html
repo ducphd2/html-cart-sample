@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="base.css" />
+
+    <title>Product</title>
+  </head>
+  <body>
+    <header class="full-width">
+      <div
+        class="d-flex align-items-center justify-content-between limit-container"
+      >
+        <div class="d-flex align-items-center gap-1">
+          <button id="back" class="px-8">
+            <img src="Img/arrow-left.svg" alt="" />
+          </button>
+          <span class="text-size-2">Giỏ hàng thanh toán</span>
+        </div>
+        <div class="d-flex align-items-center button-header">
+          <button><img src="Img/more-square.svg" alt="" /></button>
+          <button class="border-left">
+            <img src="Img/material-symbols-light_close.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </header>
+    <div
+      id="cart-body"
+      class="cart d-flex flex-column align-items-center gap-3"
+    >
+      <div id="product-list" class="full-screen gap-3 py-12 px-16"></div>
+      <div class="full-screen px-16 py-12 gap-2">
+        <div class="d-flex align-items-center justify-content-between w-100">
+          <div class="d-flex align-items-center gap-1">
+            <img src="Img/profile-icon.svg" alt="" />
+            <span class="text-size-2 font-weight-600">Thông tin nhận hàng</span>
+          </div>
+          <div>
+            <img src="Img/arrow-right.svg" alt="" />
+          </div>
+        </div>
+        <div class="d-flex flex-column boder-input-group w-100">
+          <input
+            class="boder-input"
+            type="text"
+            id="customer-name"
+            placeholder="Tên khách hàng"
+          />
+          <input
+            class="boder-input"
+            type="text"
+            id="customer-phone"
+            placeholder="Số điện thoại"
+          />
+          <input
+            type="text"
+            class="boder-input"
+            id="customer-address"
+            placeholder="Địa chỉ nhận hàng"
+          />
+          <div class="d-flex align-items-center gap-1">
+            <img src="Img/edit.svg" alt="" />
+            <input
+              type="text"
+              class="boder-input w-100"
+              id="customer-note"
+              placeholder="Nhấp để thêm ghi chú"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="full-screen px-16 py-12 gap-2">
+        <div class="d-flex align-items-center justify-content-between w-100">
+          <div class="d-flex align-items-center gap-1">
+            <img src="Img/logistic.svg" alt="" />
+            <span class="text-size-2 font-weight-600"
+              >Phương thức vận chuyển</span
+            >
+          </div>
+          <div>
+            <img src="Img/arrow-left.svg" alt="" />
+          </div>
+        </div>
+        <div class="d-flex flex-column boder-input-group w-100">
+          <label for="fast">
+            <div class="boder-input">
+              <div
+                id="fast-container"
+                class="d-flex justify-content-between py-8 px-8"
+              >
+                <div class="">
+                  <div class="text-size-2 font-weight-500">Nhanh</div>
+                  <div class="text-size-9 font-weight-400 text-gray">
+                    Nhận hàng vào 28/12 - 30/12
+                  </div>
+                </div>
+                <div class="d-flex flex-column">
+                  <input id="fast" name="flexRadioDefault" type="radio" checked/>
+                  <span>15.000đ</span>
+                </div>
+              </div>
+            </div>
+          </label>
+          <label for="normal">
+            <div class="boder-input">
+              <div
+                id="normal-container"
+                class="d-flex justify-content-between py-8 px-8"
+              >
+                <div>
+                  <div class="text-size-2 font-weight-500">Thường</div>
+                  <div class="text-size-9 font-weight-400 text-gray">
+                    Nhận hàng vào 28/12 - 30/12
+                  </div>
+                </div>
+                <div class="d-flex flex-column">
+                  <input id="normal" name="flexRadioDefault" type="radio" />
+                  <span>10.000đ</span>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+      <div class="full-screen px-16 py-12 gap-2">
+        <div class="d-flex justify-content-between w-100">
+          <div class="d-flex align-items-center gap-1">
+            <img src="Img/ticket-discount.svg" alt="" />
+            <span class="text-size-2 font-weight-600">Thông tin voucher</span>
+          </div>
+        </div>
+        <div class="d-flex flex-column boder-input-group w-100">
+          <div class="d-flex w-100 boder-input gap-2">
+            <img src="Img/ticket-discount-20.svg" alt="" />
+            <div class="w-100 overflow-hidden">
+              <div class="text-truncate">
+                <span class="text-parimary text-size-1 font-weight-500"
+                  >Chưa áp dụng</span
+                >
+                <span class="text-parimary text-size-9"
+                  >(chọn hoặc nhập mã)</span
+                >
+              </div>
+              <div class="text-size-1 font-weight-400">Voucher của shop</div>
+            </div>
+            <img src="Img/arrow-right.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="full-screen px-16 py-12 gap-2">
+        <div class="d-flex justify-content-between w-100">
+          <div class="d-flex align-items-center gap-1">
+            <img src="Img/wallet.svg" alt="" />
+            <span class="text-size-2 font-weight-600">Chi tiết thanh toán</span>
+          </div>
+        </div>
+        <div class="d-flex flex-column boder-input-group w-100">
+          <div class="d-flex justify-content-between boder-input gap-3">
+            <div class="w-100">
+              <div class="text-size-1 font-weight-500">Tổng tiền hàng</div>
+              <div
+                id="amount-pre"
+                class="text-size-1 text-orange font-weight-500"
+              >
+                0đ
+              </div>
+            </div>
+            <img src="Img/arrow-right.svg" alt="" />
+          </div>
+          <div class="d-flex justify-content-between boder-input gap-3">
+            <div class="w-100">
+              <div class="text-size-1 font-weight-500">Miễn phí vận chuyển</div>
+              <div
+                id="delivery-cost"
+                class="text-size-1 text-orange font-weight-500"
+              >
+                Hãy chọn phương thức vận chuyển
+              </div>
+            </div>
+            <img src="Img/arrow-right.svg" alt="" />
+          </div>
+          <div class="d-flex justify-content-between boder-input gap-3">
+            <div class="w-100">
+              <div>Tổng voucher giảm giá</div>
+              <div>0đ</div>
+            </div>
+            <img src="Img/arrow-right.svg" alt="" />
+          </div>
+          <div class="d-flex justify-content-between boder-input gap-3">
+            <div class="w-100">
+              <div>Phương thức thanh toán</div>
+              <div>Thanh toán khi nhận hàng (COD)</div>
+            </div>
+            <img src="Img/arrow-right.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="pay-body"
+      class="pay d-flex flex-column align-items-center gap-3"
+    ></div>
+
+    <footer class="bg-white px-16 py-8 d-flex justify-content-center">
+      <div
+        class="d-flex align-items-center justify-content-between limit-container"
+      >
+        <div id="cart-footer" class="cart d-flex justify-content-between w-100">
+          <div class="d-flex flex-column gap-1">
+            <div id="total-porduct" class="text-size-1 font-weight-500">
+              1 sản phẩm
+            </div>
+            <div id="amount" class="text-size-3 text-red">589.000đ</div>
+          </div>
+          <button id="confirm" class="btn btn-lg">
+            <img src="Img/Cart.svg" alt="" /> Mua ngay
+          </button>
+        </div>
+        <div id="pay-footer" class="pay w-100">
+          <button id="pay" class="btn btn-full-width">
+            <img src="Img/Cart.svg" alt="" /> Mua ngay
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <div id="myModal" class="modal">
+      <div
+        class="modal-content gap-4 d-flex flex-column align-items-center justify-content-center"
+      >
+        <!-- <span class="close-button">&times;</span> -->
+        <img src="Img/success.svg" alt="" />
+        <div class="d-flex flex-column align-items-center gap-1">
+          <div class="text-size-3 font-weight-700">Thanh toán thành công</div>
+          <div class="text-center text-size-2 font-weight-400">
+            Cảm ơn bạn đã sử dụng dịch vụ, đơn hàng của bạn sẽ được giao trong
+            thời gian 3 ngày tới.
+          </div>
+        </div>
+        <button id="closeModalButton" class="btn btn-full-width">
+          Xác nhận
+        </button>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
